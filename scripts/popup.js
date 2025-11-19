@@ -27,9 +27,6 @@ runBatchButton.addEventListener("click", async () => {
     const pitchUpper = document.querySelector("#pitchUpper");
     const pitchLower = document.querySelector("#pitchLower");
     const pitchInterval = document.querySelector("#pitchInterval");
-    const spdUpper = document.querySelector("#spdUpper");
-    const spdLower = document.querySelector("#spdLower");
-    const spdInterval = document.querySelector("#spdInterval");
     // Find the active tab
     const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
 
@@ -43,9 +40,6 @@ runBatchButton.addEventListener("click", async () => {
             pitchUpper: pitchUpper.value,
             pitchLower: pitchLower.value,
             pitchInterval: pitchInterval.value,
-            spdUpper: spdUpper.value,
-            spdLower: spdLower.value,
-            spdInterval: spdInterval.value
     }   });
     
     
