@@ -1,7 +1,7 @@
 const runBatchButton = document.querySelector("#runBatch");
 const exportCSVButton = document.querySelector("#export");
 // need MFT, static thrust, T/W, Pitch Spd, Est Lvl Spd, Eff Drive, Power, Min Flight Time. If other values are needed, add to payload in content.js .
-const headers = ["Mixed Flight Time", "Static Thrust", "T/W", "Pitch Speed", "Estimated Level Speed", "Efficiency Drive (%)", "Power", "Min Flight Time"]
+const headers = ["Diameter (in)", "Pitch(in)", "Mixed Flight Time (min)", "Static Thrust (g)", "T/W", "Pitch Speed (Mph)", "Estimated Level Speed", "Efficiency Drive (%)", "Power", "Min Flight Time"]
 let receivedData = null
 
 function arrayToCSV(data) {
