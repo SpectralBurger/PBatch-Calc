@@ -39,7 +39,7 @@ chrome.runtime.onMessage.addListener(async (msg, sender, sendResponse) => {
                 
                     diamField.value = i1;
                     pitchField.value = i2;
-                    spdField.value = i3;
+                    
 
                     btn.click();
                     await new Promise(r => setTimeout(r, 600));
