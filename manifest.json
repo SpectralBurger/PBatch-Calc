@@ -1,0 +1,24 @@
+{
+  "name": "Hello Extensions",
+  "description": "Base Level Extension",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "pbatch-interface.html",
+    "default_icon": "pbatch-icon.png"
+  },
+  "background": {
+    "service_worker": "scripts/background.js"
+  },
+  "content_scripts": [
+    {
+      "js": ["scripts/content.js"],
+      "matches": [
+        "https://www.ecalc.ch/motorcalc.php"
+      ]
+    }
+  ],
+  "host_permissions": [
+  "https://www.ecalc.ch/*"
+  ]
+}

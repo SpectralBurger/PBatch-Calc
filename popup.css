@@ -1,0 +1,38 @@
+.flex-row {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* space between elements */
+}
+
+.small-input {
+  width: 50px;
+}
+
+.section-title {
+  text-align: center;
+  margin-top: 5px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.body-label {
+    
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 3px;
+    align-items: center;
+    font-size: 14px;
+
+}
+
+h2 {
+    margin-bottom: 2px; /* spacing under header */
+}
+
+button {
+
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+
+}

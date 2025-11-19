@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./popup.css" />
+  </head>
+  <body>
+    <template id="li_template">
+      <li>
+        <a>
+          <h3 class="title">Tab Title</h3>
+          <p class="pathname">Tab Pathname</p>
+        </a>
+      </li>
+    </template>
+
+    <h1>--PBatch Calc--</h1>
+
+    <p> Leave all non-variable values fields blank in the extension window.</p>
+    <h2 class="section-title">Diameter (in)</h2>
+    <form class="flex-row">
+      <label for="diamLower">From:</label>
+      <input type="text" id="diamLower" name="diamLower" class="small-input">
+
+      <label for="diamUpper">to:</label>
+      <input type="text" id="diamUpper" name="diamUpper" class="small-input">
+
+      <label for="diamInterval">Interval:</label>
+      <input type="text" id="diamInterval" name="diamInterval" class="small-input">
+    </form>
+
+    <h2 class="section-title">Pitch (in)</h2>
+    <form class="flex-row">
+      <label for="pitchLower">From:</label>
+      <input type="text" id="pitchLower" name="pitchLower" class="small-input">
+
+      <label for="pitchUpper">to:</label>
+      <input type="text" id="pitchUpper" name="pitchUpper" class="small-input">
+
+      <label for="pitchInterval">Interval:</label>
+      <input type="text" id="pitchInterval" name="pitchInterval" class="small-input">
+    </form>
+
+    <h2 class="section-title">Flight Speed (mph)</h2>
+    <form class="flex-row">
+      <label for="spdLower">From:</label>
+      <input type="text" id="spdLower" name="spdLower" class="small-input">
+
+      <label for="spdUpper">to:</label>
+      <input type="text" id="spdUpper" name="spdUpper" class="small-input">
+
+      <label for="spdInterval">Interval:</label>
+      <input type="text" id="spdInterval" name="spdInterval" class="small-input">
+    </form>
+
+    <label for="runBatch" class="body-label">Run for Selected Data Points</label>
+    <button id="runBatch">Run Batch</button>
+
+    <label for="export" class="body-label">Export Results</label>
+    <button id="export">Export to .csv</button>
+
+    <ul></ul>
+
+    <script src="scripts/popup.js" type="module"></script>
+  </body>
+</html>
