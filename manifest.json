@@ -1,7 +1,7 @@
 {
-  "name": "Hello Extensions",
-  "description": "Base Level Extension",
-  "version": "1.0",
+  "name": "Pbatch-Calc",
+  "description": "Batch calculation for Propcalc",
+  "version": "1.51",
   "manifest_version": 3,
   "action": {
     "default_popup": "pbatch-interface.html",
