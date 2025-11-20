@@ -29,4 +29,4 @@ AFTER run batch completes data collection, hit "Export to .csv" button to downlo
 
 In order to keep either pitch or diameter constant while only varying the other, enter the value you wish to keep constant in both the "From" and "to" boxes, and enter interval as 1.
 This will run the loop once over that constant value for each of the varying values.
-DO NOT ENTER ZERO IN THE INTERAL FIELD, THIS WILL RESULT IN A PERMANENT LOOP. Foolproofing will be added later.
+DO NOT ENTER ZERO IN THE INTERVAL FIELD, THIS WILL RESULT IN A PERMANENT LOOP. Foolproofing will be added later.
