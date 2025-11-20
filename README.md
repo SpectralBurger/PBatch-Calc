@@ -2,7 +2,21 @@
 
 
 Simple chrome extension to automate collection of Minimum Flight Time, static thrust (g) , T/W, Pitch Spd, Est Lvl Spd, Eff Drive, Power, Min Flight Time all in imperial units, from ecalc/Propcalc site
-for varying diameter and pitch combinations.
+for varying diameter and pitch combinations. Made for use for model plane creation team.
+
+
+--Installation--
+
+
+1. Download source code and extract.
+2. Go to chrome://extensions
+3. Enable developer mode (top-right)
+4. Click "Load Unpacked"
+5. Select folder from step 1.
+
+
+--Usage--
+
 
 Diameter From : Enter diameter lower bound
 Diameter to: Enter diamter upper bound
