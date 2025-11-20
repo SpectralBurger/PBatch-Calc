@@ -1,7 +1,7 @@
 --PBATCH CALC--
 
 
-Simple chrome extension to automate collection of Minimum Flight Time, static thrust (g) , T/W, Pitch Spd, Est Lvl Spd, Eff Drive, Power, Min Flight Time all in imperial units, from ecalc/Propcalc site
+Simple chrome extension to automate collection of Minimum Flight Time, static thrust (g) , T/W, Pitch Spd, Est Lvl Spd, Eff Drive, Power, Min Flight Time all in imperial units (except static thrust), from ecalc/Propcalc site
 for varying diameter and pitch combinations. Made for use for model plane creation team.
 
 
