@@ -22,8 +22,8 @@ chrome.runtime.onMessage.addListener(async (msg, sender, sendResponse) => {
         var EffDriveVals = [];
         var PowerVals = [];
         var MinFTimeVals = [];
-        var Pitches = [];
-        var Diameter = [];
+        
+        var Sizes = [];
 
         var MFT;
         var StaticT;
@@ -42,8 +42,7 @@ chrome.runtime.onMessage.addListener(async (msg, sender, sendResponse) => {
                     diamField.value = i1;
                     pitchField.value = i2;
                     
-                    Diameter.push(i1);
-                    Pitches.push(i2);
+                    Sizes.push(String(i1) + " x " + String(i2));
 
                     btn.click();
                     await new Promise(r => setTimeout(r, 600));
@@ -81,8 +80,7 @@ chrome.runtime.onMessage.addListener(async (msg, sender, sendResponse) => {
     let Outdata = [];
     for (let i = 0; i < MFTVals.length; i++) {
         Outdata.push([
-            Diameter[i],
-            Pitches[i],
+            Sizes[i],
             MFTVals[i],
             StaticTVals[i],
             TtoWVals[i],
