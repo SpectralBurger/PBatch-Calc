@@ -28,10 +28,10 @@ runBatchButton.addEventListener("click", async () => {
     const pitchLower = document.querySelector("#pitchLower");
     const pitchInterval = document.querySelector("#pitchInterval");
     // Find the active tab
-    const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
+    const [tab] = await browser.tabs.query({ active: true, currentWindow: true });
 
     // Send message to content script
-    chrome.tabs.sendMessage(tab.id, { 
+    browser.tabs.sendMessage(tab.id, { 
         action: "clickCalculateButton",
         data: {
             diamUpper: diamUpper.value,
@@ -45,7 +45,7 @@ runBatchButton.addEventListener("click", async () => {
     
 });
 
-chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
+browser.runtime.onMessage.addListener((msg, sender, sendResponse) => {
     if (msg.action === "contentData") {
 
         console.log("Popup received!");

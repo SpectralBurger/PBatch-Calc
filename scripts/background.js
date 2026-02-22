@@ -1,8 +1,9 @@
-chrome.runtime.onMessage.addListener((msg) => {
+importScripts("browser-polyfill.js");
+browser.runtime.onMessage.addListener((msg) => {
     if (msg.action === "fromContent") {
         console.log("Got data from content script!");
 
-        chrome.runtime.sendMessage({
+        browser.runtime.sendMessage({
             action: "contentData",
             payload: msg.payload
         });

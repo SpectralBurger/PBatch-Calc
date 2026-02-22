@@ -1,5 +1,5 @@
 // Listen for messages from popup
-chrome.runtime.onMessage.addListener(async (msg, sender, sendResponse) => {
+browser.runtime.onMessage.addListener(async (msg, sender, sendResponse) => {
     if (msg.action === "clickCalculateButton") {
         const btn = document.querySelector('input[name="btnCalculate"]');
         const diamField = document.querySelector('input[name="inPDiameter"]')
@@ -93,7 +93,7 @@ chrome.runtime.onMessage.addListener(async (msg, sender, sendResponse) => {
     
 }
 
-    chrome.runtime.sendMessage({
+    browser.runtime.sendMessage({
         action: "fromContent",
         payload: {Outdata}
     });
